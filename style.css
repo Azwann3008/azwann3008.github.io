@@ -1,34 +1,118 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0a0a0a;
+    color: white;
+}z
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0a0a0a;
+    color: white;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: rgba(0,0,0,0.9);
+}
+
+.logo {
+    color: gold;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover {
+    color: gold;
+}
+
 .hero {
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    background: linear-gradient(to bottom, black, #1a1a1a);
+    align-items: center;   /* Ini yang bikin ke tengah */
+    text-align: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, black, #111);
+}
+.hero p {
+    font-size: 20px;
+    color: #ccc;
+    margin-top: 15px;
 }
 
-.hero h1 {
-    font-size: 60px;
-    color: gold;
-    text-shadow: 0 0 20px gold;
+.hero a {
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: gold;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: gold;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+section {
+    padding: 100px 40px;
+    text-align: center;
 }
 
 .grid {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
 .card {
     background: #1c1c1c;
-    padding: 25px;
+    padding: 30px;
     width: 250px;
     border-radius: 20px;
-    transition: 0.4s;
-    box-shadow: 0 0 15px rgba(255,215,0,0.2);
+    transition: 0.3s;
 }
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 30px gold;
+    box-shadow: 0 0 25px gold;
+}
+
+button {
+    padding: 10px 20px;
+    background: gold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+footer {
+    background: black;
+    padding: 20px;
 }
