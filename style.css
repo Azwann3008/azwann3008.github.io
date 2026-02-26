@@ -117,3 +117,12 @@ footer {
     padding: 20px;
 }
 
+.card img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
