@@ -3,82 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Azwan | Professional Trader & Gamer</title>
+<title>AzwanTech Store</title>
 <link rel="stylesheet" href="style.css">
 <script defer src="script.js"></script>
 </head>
 <body>
 
 <section class="hero">
-    <h1>AZWAN</h1>
-    <p>Gold Trader • MetaTrader 5 User • Gamer Strategis</p>
-    <a href="#trading" class="btn">Explore My Trading World</a>
+    <h1>AzwanTech Store</h1>
+    <p>Jual Laptop & Aksesoris PC Berkualitas</p>
 </section>
 
-<section id="about">
-    <h2>Tentang Saya</h2>
-    <p>Saya fokus pada trading XAUUSD (Gold) menggunakan MetaTrader 5.
-    Saya menggabungkan disiplin trading dan mindset gamer untuk membangun konsistensi.</p>
-</section>
-
-<section id="trading">
-    <h2>📈 Trading Experience</h2>
+<section>
+    <h2>Produk Laptop</h2>
     <div class="grid">
+
         <div class="card">
-            <h3>Market</h3>
-            <p>XAUUSD (Gold)</p>
+            <img src="images/laptop1.jpg" width="200">
+            <h3>Laptop Gaming RTX 3050</h3>
+            <p>Rp 12.500.000</p>
+            <button onclick="tambahKeCart('Laptop RTX 3050', 12500000)">Tambah ke Cart</button>
         </div>
+
         <div class="card">
-            <h3>Timeframe</h3>
-            <p>H4 • M15</p>
+            <img src="images/laptop2.jpg" width="200">
+            <h3>Laptop Office i5</h3>
+            <p>Rp 7.800.000</p>
+            <button onclick="tambahKeCart('Laptop Office i5', 7800000)">Tambah ke Cart</button>
         </div>
-        <div class="card">
-            <h3>Risk Management</h3>
-            <p>Disiplin Stop Loss & R:R 1:2</p>
-        </div>
+
     </div>
 </section>
 
 <section>
-    <h2>💻 MetaTrader 5 Setup</h2>
+    <h2>Aksesoris PC</h2>
     <div class="grid">
+
         <div class="card">
-            <h3>Platform</h3>
-            <p>MetaTrader 5 Desktop</p>
+            <h3>Mechanical Keyboard RGB</h3>
+            <p>Rp 450.000</p>
+            <button onclick="tambahKeCart('Keyboard RGB', 450000)">Tambah ke Cart</button>
         </div>
+
         <div class="card">
-            <h3>Broker</h3>
-            <p>HFM</p>
+            <h3>Mouse Gaming Pro</h3>
+            <p>Rp 250.000</p>
+            <button onclick="tambahKeCart('Mouse Gaming', 250000)">Tambah ke Cart</button>
         </div>
-        <div class="card">
-            <h3>Tools</h3>
-            <p>Indicators, Trendline, Fibonacci</p>
-        </div>
-        <div class="card">
-            <h3>Automation</h3>
-            <p>Expert Advisor (EA)</p>
-        </div>
+
     </div>
 </section>
 
 <section>
-    <h2>🧠 Strategy</h2>
-    <p>POI • Order Block • Imbalance • Break of Structure</p>
-</section>
-
-<section>
-    <h2>🎮 Gaming Mindset</h2>
-    <p>Game dan trading sama-sama butuh fokus, strategi, dan kontrol emosi.</p>
-</section>
-
-<section>
-    <h2>🎯 Vision</h2>
-    <p>Menjadi trader konsisten dan membangun setup profesional trading & gaming.</p>
-    <button onclick="motivasi()">Klik Motivasi</button>
+    <h2>Keranjang Belanja</h2>
+    <ul id="daftarCart"></ul>
+    <p id="totalHarga">Total: Rp 0</p>
+    <button onclick="checkout()">Checkout via WhatsApp</button>
 </section>
 
 <footer>
-    © 2026 Azwan | Trader & Gamer
+    © 2026 AzwanTech Store
 </footer>
 
 </body>
